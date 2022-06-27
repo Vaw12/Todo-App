@@ -1,18 +1,21 @@
 <template>
-  
-  <div class="container">
-    <Todos />
-    <RouterView />
-  </div>  
-  
+  <div id="app">
+    <div class="container">
+      <AddTodo/>
+      <Todos />
+      <!-- <RouterView /> -->
+    </div>  
+  </div>
 </template>
 
 <script>
 // import { RouterLink, RouterView } from 'vue-router'
 import Todos from './components/Todos.vue'
+import AddTodo from './components/AddTodo.vue'
+
 export default{
     name: "App",
-    components: { Todos }
+    components: { Todos, AddTodo }
 }
 </script>
 
